@@ -1,0 +1,1813 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+#container {
+    
+}
+
+#navbar{
+width: 100%;
+position: fixed;
+display: flex;
+align-items: center;
+height: 80px;
+background-color: white;
+box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.207);
+z-index: 1;
+
+}
+
+#nav{
+ margin-left: 135px;
+ width: 90%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ font-family: Arial, Helvetica, sans-serif;
+ margin-right: 10px;
+}
+
+#logo{
+ width: 25%;
+ height: 60%;
+ display: flex;
+ justify-content: start;
+ align-items: center;
+ margin-right: 40px;
+}
+
+#logo img{
+width: 50%;
+height: 40%;
+margin-left: 25px;
+}
+
+#midbar{
+width: 65%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+margin-right: 20px;
+
+}
+
+#midbar #get{
+width: fit-content;
+padding: 13px 15px;
+border: 1px solid black;
+border-radius: 20px;
+font-size: 15px;
+background-color: rgba(255, 255, 255, 0);
+font-weight: 600;
+}
+
+#midbar #p , #midbar #w{
+border: none;
+font-size: 15px;
+background-color: rgba(255, 255, 255, 0);
+font-weight: 600;
+
+}
+
+#lastbar{    
+width: 13%;
+display: flex;
+align-items: center;
+justify-content: end;
+flex-wrap: wrap;
+}
+
+#lastbar  #span{
+border-radius: 50px;
+background-color: rgb(0,130,143);
+padding: 7px;
+color: white;
+border: none;
+}
+
+#lastbar img{
+width: 48px;
+height: 48px;
+   
+}
+
+#run {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: brown;
+    display: none;
+    left: 0;
+    top: 0;
+}
+
+#con {
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+#con img{
+    margin: 30px;
+    width: 120px;
+    height: 50px;
+}
+
+#con p {
+    font-weight: 900;
+    margin-right: 100px;
+    margin-bottom: 35px;
+    align-self: flex-end;
+    font-size: 18px; 
+}
+
+#con #get{
+    width: fit-content;
+    padding: 18px;
+    border: 1px solid black;
+    border-radius: 30px;
+    align-self: center;
+    font-size: 18px;
+    background-color: white;
+    font-weight: 900;
+
+}
+#rare {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    display: none;
+}
+
+#ride:focus-within #run{
+    display: block;
+}
+
+#want{
+    position: relative;
+}
+
+#crave , #cra{
+    position: absolute;
+    width: 850px;
+    height: 280px;
+    border-radius: 10px;
+    background-color: white;
+    border: 0.5px solid rgb(117, 117, 238);
+    top: 30px;
+    left: -430px;
+    box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.162);
+    display: none;
+}
+
+#cra{
+display: flex;
+align-items: center;
+justify-content: center;
+left: 0;
+top: 0;
+}
+
+#oncra{
+    display: flex;
+    align-items: center;
+    width: 95%;
+    height: 90%; 
+}
+
+#on {
+   display: flex;
+   align-items: start;
+   justify-content: space-between;
+   width: 70%;
+   height: 100%;
+   border-right: 4px solid blue;
+}
+
+#onn{
+  width: 30%;
+  height:100% ;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#on1 , #onn1 {
+    width: 45%;
+    height: 30%;
+    margin: 10px;
+}
+
+#onn1 {
+    width: 90%;
+    height: 43%;
+}
+
+#onn img{
+    width: 100%;
+    height: 100%;
+    
+}
+#girl{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+#girl img{
+    display: inline-block;
+    padding-right: 5px;
+}
+
+#bye {
+    margin-left: 20px;
+}
+
+#want:hover #crave {
+    display: block;
+}
+
+#fate{
+    position: relative;
+}
+
+#word , #mud , #pain , #hurt ,#life , #mistakes {  
+    position: absolute;
+    width: 730px;
+    height: 220px;
+    top: 30px;
+    left: -350px;
+    border-radius: 15px;
+    box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.162);
+    background-color: white;
+    display: none;
+}
+
+#mud , #hurt , #mistakes {
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+
+#mud1 ,#mudd1{
+
+    padding: 3px;
+    width: 78%;
+    height: 90%;
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+#mudd1{
+    width: 73%;
+}
+
+#mud2 , #mudd2{
+    width: 22%;
+    height: 100%;
+    background-color: rgb(56,67,208);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    line-height: 25px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+#mudd2{
+    width: 27%;
+}
+
+#mud2 p , #pp , #mudd2 p {
+
+  font-weight: 600;
+  color: white;
+  margin-left: 20px;
+}
+
+#mud2 #pp , #mudd2 #pp{
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+#fate:hover #word {
+    display: block;
+}
+
+#pain{
+    top: 60px;
+    left: 370px;
+}
+
+#regret:hover #pain{
+    display: block;
+}
+
+#life {
+    top: 65px;
+    left: 450px;
+}
+
+
+#real:hover #life {
+    display: block;
+}
+
+
+#real, #regret ,#fate , #want , #range{
+
+    height: 50px;
+    margin-top: 30px;
+}
+
+#range {
+    position: relative;
+}
+#derange ,#orange {
+    position: absolute;
+    width: 440px;
+    height: 230px;
+    background-color: white;
+    box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.162);
+    top: 35px;
+    left: -220px;
+    border-radius: 15px;
+    display: none;
+}
+
+#orange {
+
+    display: flex;
+    align-items: start;
+    top: 0;
+    left: 0;
+    justify-content: space-around;
+
+}
+
+#orange div{
+    font-size: 15px;
+    margin-top: 25px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+#range:hover #derange{
+    display: block;
+}
+
+#p:hover , #w:hover{
+    color: blue;
+
+}
+
+#bye , #by{
+    font-size: 15px;
+}
+
+#midbar #get:hover {
+    border: 0.2px solid black;
+}
+
+#row{
+    position: relative;
+}
+
+#rain{
+    position: absolute;
+    display: none;
+    line-height: 22px;
+   
+    
+}
+
+#rain p{
+    border-radius: 50%;
+    background-color: white;
+    padding: 5px;
+    color: rgb(0,130,143);
+    border: 1px solid rgb(0,130,143) ;
+    margin-top: 3px;
+
+}
+
+#row:hover  #rain{
+    display: block;
+}
+
+#newdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    padding-top: 150px;
+    padding-bottom: 40px;
+}
+
+#you , #they {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+   width: 50%;
+   height: 100%;
+}
+
+#they{
+ justify-content: center;
+}
+
+#para , #ray{
+    width: 80% ;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 70%;
+}
+
+#ray{
+    margin-left: 0;
+    width: 72%;
+    height: 75%;
+    margin-right: 90px;
+}
+
+#ray img{
+    width: 100%;    
+}
+
+#para h1{
+    color: rgb(4,2,53);
+    font-size: 50px;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+#para p {
+    line-height: 25px;
+    font-size: 18px;
+    margin-bottom: 60px;
+
+}
+
+#para span  , #mark div span , #rack div span , #speak span , #almost div #span{
+    font-weight: 600;
+    background-color: rgb(249,99,61);
+    color: white;
+    padding: 18px 22px;
+    border-radius: 25px;
+    box-shadow: 6px 6px  rgb(4,2,54);
+    font-size: 17px;
+    /* transition: all 0.2; */
+}
+
+#almost div #span {
+    box-shadow: 6px 6px  white;
+    background-color: rgb(44, 58, 184);
+}
+
+#para span:hover , #mark div span:hover , #rack div span:hover , #speak span:hover , #almost div #span:hover{
+    box-shadow: none;
+    background-color:rgb(4,2,54) ;
+    margin-left: 1.5%;
+    margin-top: 1.5%;
+}
+
+#almost div #span :hover {
+    background-color: white;
+
+}
+
+
+#tray{
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(235,241,246);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#may{
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 50%;
+    height: 450px;
+    position: relative;
+  
+}
+
+#may img{
+   
+  
+    width: 80%;
+    height: 70%;
+}
+
+#dismay{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17.5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    width: 50%;
+    height: 100%; 
+    margin-bottom: 100px;
+}
+
+#fry{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    flex-wrap: wrap;
+}
+
+#dismay h1{
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+iframe{
+    position: absolute;
+    width: 70%;
+    height: 58%;
+    left: 180px;
+    
+}
+
+#logos{
+    width: 100%;
+   align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin-bottom: 150px;
+   
+}
+
+
+#header {
+    text-align: center;
+    margin-top: 50px;
+ 
+}
+
+
+#eye{
+    width: 85%;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  
+}
+
+#eye div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 250px;
+    height: 150px;
+   
+
+
+
+}
+
+#eye div img{
+    width: 55%;
+    height: 55%;
+}
+
+#makeme{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#road , #roadd{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: end;
+}
+#roadd{
+    justify-content: start;
+
+}
+
+#rodeo , #rodeoo{
+    width: 50%;
+   height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#rodeoo{
+justify-content: end;
+}
+
+
+#road div , #rodeo div , #roadd div , #rodeoo div{
+    width: fit-content;
+    height: fit-content;
+}
+
+#rodeo div , #rodeoo div {
+    width: 80%;
+    font-size:25px;
+    font-family: Arial, Helvetica, sans-serif;
+     margin-right: 50px;  
+}
+
+#road div img , #roadd div img{
+    width: 600px;
+    height: 600px;
+}
+
+#rodeo div h2 , #rodeoo div h2{
+    letter-spacing: -1px;
+    margin-bottom: 40px;
+}
+
+#rodeo div p , #rodeoo div p{
+    font-size: 19px;
+
+}
+
+#small{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(220,237,235);
+    
+}
+
+#header {
+    width: 70%;
+}
+#header p{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+#react , #mark , #rack {
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+  
+}
+
+#rack , #mark {
+    width: 50%;
+    height: 350px;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(250,244,235);
+    padding-bottom: 30px;
+}
+
+#mark {
+    justify-content: center;
+    background-color: rgb(255,174,187);
+}
+
+#rack div, #mark div{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    height: 50%;
+}
+
+#rack div h1, #mark div h1{
+    line-height: 30px;
+}
+
+#blue {
+    width: 100%;
+    height: 500px;
+    background-image: url('Background-Featured-Integration-02\ \(1\).svg');
+    background-repeat: no-repeat;
+    display: flex;
+    
+    align-items: center;
+    background-size: cover;
+
+}
+
+
+#fave , #cards {
+    width: 50%;
+    height: 100%;
+    flex-wrap: wrap;
+display: flex;
+align-items: center;
+justify-content: end;
+background-color: rgba(127, 255, 212, 0);
+}
+
+
+
+#cards {
+   justify-content: start;
+}
+
+#fave div , #cards div{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: space-around;
+     color: white;
+    width: 80%;
+    height: 80%;
+   
+
+}
+
+#cards div{
+    margin-left: 80px;
+    width: 60%;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+#fave div #c {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+    font-weight: 600;
+}
+
+#cards div section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 160px;
+    height: 160px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow:  10px 10px black  ;
+   
+
+    
+}
+
+section img {
+    width: 80%;
+    height: 60%;
+}
+
+
+#hov{
+    width: 100%;
+    height: 350px;
+    background-color: rgb(235,241,246);
+}
+
+#drake {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+#cane , #abel {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+    
+
+}
+
+#abel{
+    height: fit-content;
+    justify-content: start;
+}
+
+#cane div , #abel div {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    height: 300px;
+    display: flex;
+   
+    justify-content: end;
+    align-items: center;
+}
+
+#abel div{
+    width: 80%;
+    height: 300px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+   
+   
+    
+}
+
+#abel div #p3{
+    display: flex;
+    align-items: center;
+
+}
+
+#abel div #p1{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid blue;
+}
+
+
+#rose {
+    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#rizz {
+   font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#rizz h2{
+    width: 100%;
+    display: flex;
+    font-size: 35px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#razz p {
+    font-size: 13px;
+}
+
+#rizz h2 span {
+    border: 1px solid black;
+    border-radius: 25px;
+    font-size: 19px;
+    padding: 10px;
+}
+
+ #razz {
+    width: 100%;
+    height: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: scroll;
+  
+ }
+
+  #razz img{
+    width: 200px;
+    
+ }
+
+ #razz div{
+    margin-right: 20px;
+   
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+ }
+
+
+ #speak {
+    margin-top: 100px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+ }
+
+
+ #medal {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 500px;
+ }
+#medal div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    width: 250px;
+    height: 300px;
+}
+
+#medal img {
+    width: 80%;
+    height: 80%;
+}
+
+#speak h2{
+    margin-top: 50px;
+    font-size: 30px;
+    border-top:  1px solid black;
+    border-bottom: 1px solid black;
+}
+ 
+#almost {
+   
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('CTA-Background-Pink\ \(1\).svg');
+}
+
+#almost div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    width: 80%;
+    height: 60%;
+    margin: auto;
+    flex-direction: column;
+}
+
+#almost div span {
+    color: rgb(44, 58, 184);
+}
+
+#almost div h1{
+    color: white;
+}
+
+.astbg{
+    width: 100%;
+    height: 90vh;
+    background-image: url(BackgroundPink.svg);
+    background-size: cover;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lastbg{
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(4,2,55);
+}
+.top{
+    width: 90%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    /* background-color: aqua; */
+    border-bottom: 2px solid rgb(36,38,100);
+}
+.ogo img{
+    height: 90px;
+}
+.text{
+    width: 65%;
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 30px;
+}
+.text h1{
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.text h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+.text h2:hover{
+    color: rgb(56, 109, 208);
+}
+.bot{
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    /* margin-left: 30px; */
+}
+.bot h2{
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: white;
+}
+.bot h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: white;
+}
+.mot{
+    width: 95%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 20px; */
+}
+.mm{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+}
+.mn{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+/* media quaries */
+@media (max-width : 1189px ){
+    #nav{
+     margin-left: 0;
+     width: 100%;
+    }
+
+    #logo{
+        margin-right: 60px;
+        margin-left: 0;
+    }
+    #midbar{
+        width: 70%;
+    }
+
+    #lastbar{
+        width: 1%;
+        
+    }
+
+}
+
+@media (max-width: 1023px){
+
+    .lastbg{
+        display: none;
+    }
+
+    .mm{
+        display: none;
+    }
+   #nav {
+    margin-left: 80px;
+    width:100%;
+   }
+
+   #p{
+    display: none;
+   }
+
+   #rare{
+    display: block;
+   }
+   #lastbar{
+    width: 26%;
+    justify-content: space-between;
+   }
+   #w{
+    margin-left: 320px;
+   }
+  #midbar #get{
+    padding: 10px 10px;
+   }
+   #logo img{
+    width: 120px;
+        height: 50px;
+    }
+
+}
+
+@media (max-width: 973px){
+    #w{
+        margin-left: 290px;
+       }
+       #lastbar{
+        width: 22%;
+       }
+}
+
+@media (max-width: 907px){
+    #w{
+        margin-left: 260px;
+       }
+       #lastbar{
+        width: 19%;
+       }
+
+       #fry{
+        margin: auto;
+       }
+}
+
+@media (max-width: 836px){
+    #w{
+        margin-left: 220px;
+       }
+       #lastbar{
+        width: 15%;
+       }
+}
+
+@media (max-width: 767px){
+    #w{
+      display: none;
+       }
+  #midbar #get{
+    display: none;
+   }
+   #lastbar{
+    width: 25%;
+   }
+
+   #logo img{
+    width: 120px;
+    height: 50px; 
+    }    
+}
+
+@media (max-width: 750px) {
+    #nav {
+        margin-left: 50px;
+       }
+       #lastbar{
+        width: 20%;
+       } 
+}
+
+@media (max-width: 730px) {
+
+    #nav {
+        margin-left: 40px;
+       }
+       #lastbar{
+        width: 20%;
+       }  
+}
+
+@media (max-width: 710px) {
+    #nav {
+        margin-left: 20px;
+       }   
+}
+
+
+@media (max-width: 690px) {
+    #nav {
+        margin-left: 0px;
+       }
+       #lastbar{
+        width: 16%;
+       }   
+}
+
+
+
+@media (min-width: 525px) and (max-width: 670px)  {
+       #lastbar{
+        width: 25%;
+       }  
+}
+
+@media (min-width: 414px) and (max-width: 525px)  {
+    #lastbar{
+     width: 40%;
+    }
+}
+
+@media (min-width: 353px) and (max-width: 414px)  {
+    #lastbar{
+     width: 60%;
+    }
+}
+
+@media (min-width: 310px) and (max-width: 353px)  {
+    #lastbar{
+     width: 100%;
+    }
+}
+
+@media (max-width: 353px) {   
+    #lastbar{
+       display: none;
+       }
+}
+
+@media (max-width:1190px) {
+
+    #life {
+        left: 270px;
+
+    }
+
+    #pain{
+       left: 220px;
+    }
+
+#para{
+    width: 98%;
+  
+}
+#ray{
+    width: 100%;
+}
+
+#ray img{
+    margin-left: 60px;
+}
+
+#crave {
+   left: -330px;
+}
+
+iframe {
+    width: 70%;
+   height: 53%;
+   left: 140px;
+
+}
+
+#fave{
+    justify-content: start;
+    
+    margin-left: 20px;
+   
+}
+
+
+
+#card div{
+    width: 450px;
+    margin-right: 0;
+}
+
+ #cards div section {
+    width: 140px;
+    height: 140px;
+}
+
+
+
+
+    
+}
+
+@media (max-width: 1170px) {
+    #para{
+        width: 86%;
+    }
+    #para p {
+        font-size: 17px;
+    }
+        
+#road div img , #roadd div img{
+    width: 500px;
+    height: 500px;
+}
+    
+}
+
+@media (max-width: 1139px){
+    #para{
+        width: 88%;
+    }
+
+}
+@media (max-width: 1112px){
+    #para{ 
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 1087px){
+    #para{
+        width: 92%;
+    }
+
+}
+@media (max-width: 1065px){
+    #para{
+        width: 94%;
+    }
+
+}
+
+@media (max-width: 1043px){
+    #para{ 
+        width: 96%;
+    }
+
+}
+@media (max-width: 1023px){
+   #you{
+    width: 85%;
+    margin: auto;
+    text-align: left;
+    padding-top: 20px;
+   }
+   #they{
+    width: 85%;
+    text-align: center;
+    margin: auto;
+    
+    padding-top: 100px;
+    /* margin-right: 150px; */
+   }
+
+   #mark , #rack {
+    width: 100%;
+    height: 250px;
+ 
+}
+
+#speak{
+    padding-bottom: 400px;
+}
+
+#mark div h1 , #rack div h1{
+    padding-bottom: 30px;
+}
+
+#cane, #abel{
+    width: 100%;
+    justify-content: center;
+    
+}
+
+#abel div ,#cane div {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#abel div{
+      justify-content: space-between;
+}
+
+
+#abel div #p3 {
+justify-content: center;
+align-items: center;
+
+}
+
+
+   #para h1{
+    font-size: 40px;
+   }
+   #para p {
+    font-size: 20px;
+   }
+
+   #para span {
+   
+    display: inline-block
+   
+   }
+
+   #may , #dismay{
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 0%;
+  font-size: 18px;
+   }
+
+   #may img{
+    width: 40%;
+    height: 60%;
+    
+    
+}
+
+#may{
+    margin-top: 30px;
+}
+
+iframe {
+    width: 35%;
+   height: 80%;
+   left: 330px;
+  
+}
+
+
+#dismay{
+    font-size: 15px;
+}
+
+#road , #rodeo , #roadd , #rodeoo{
+   width: 100% ;
+   justify-content: center;
+   text-align: center;
+  
+}
+
+#road div img , #roadd div img{
+    width: 400px;
+    height: 400px;
+}
+
+#rodeo div , #rodeoo div{
+    margin: auto;
+ 
+}
+
+#logos {
+    margin-bottom: 30px;
+}
+
+
+#cards {
+    display: none;
+}
+
+#fave   {
+   
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+
+    
+}
+ #fave div #c{
+justify-content: center;
+}
+
+#almost div {
+    text-align: center;
+}
+
+#almost div h1 {
+    font-size: 24px;
+}
+
+}
+
+@media (max-width: 995px) {
+    iframe {
+      
+       left: 315px;
+      
+    }
+
+    #abel{
+        
+        padding-bottom: 10px;
+    }
+
+    #abel div{
+        font-size: 16px;
+    }
+
+    #fave div{
+        font-size: 16px;
+    }
+    
+}
+
+@media (max-width: 945px) {
+    iframe {
+       
+       left: 300px;
+      
+    }
+
+    
+}
+@media (max-width: 910px) {
+    iframe {
+       
+       left: 290px;
+      
+    }
+
+    #rizz h2 span {
+        display: none;
+    }
+
+    #speak h2 , #speak h1 {
+        font-size: 16px;
+    }
+    
+}
+@media (max-width: 870px) {
+    iframe {
+       
+       left: 280px;
+      
+    }
+    #header {
+        font-size: 15px;
+    }
+
+    
+}
+@media (max-width: 830px) {
+    iframe {
+       
+       left: 260px;
+      
+    }
+
+    
+}
+
+@media (max-width: 780px) {
+    iframe {
+       
+       left: 240px;
+      
+    }
+
+
+    
+}
+
+@media (max-width: 767px) {
+    #you{
+        width: 85%;
+        margin: auto;
+        text-align: center;
+       }
+      
+       #dismay{
+        font-size: 14px;
+    }
+
+    #rodeo div h2 , #rodeoo div h2{
+     font-size: 28px;
+        
+    }
+    
+    #rodeo div p , #rodeoo div p{
+        font-size: 16px;
+    
+    }
+    
+    
+}
+
+
+@media (max-width: 720px) {
+    iframe {
+       
+       left: 225px;
+      
+    }
+
+    #road div img , #roadd div img{
+        width: 350px;
+        height: 350px;
+    }
+    
+    
+}
+
+@media (max-width: 675px) {
+    iframe {
+       
+       left: 210px;
+      
+    }
+    #road div img , #roadd div img{
+        width: 300px;
+        height: 300px;
+    }
+    
+    #header {
+        font-size: 13px;
+    }
+
+    #speak{
+        padding-bottom: 1000px;
+    }
+    
+}
+
+@media (max-width: 625px) {
+    iframe {
+       
+       left: 200px;
+      
+    }
+    #road div img , #roadd div img{
+        width: 250px;
+        height: 250px;
+    }
+    
+
+    
+}
+
+@media (max-width: 580px) {
+    iframe {
+       
+       left: 180px;
+      
+    }
+
+    #road div img , #roadd div img{
+        width: 210px;
+        height: 210px;
+    }
+    
+    
+}
+
+@media (max-width: 535px) {
+    iframe {
+       
+       left: 170px;
+      
+    }
+
+    
+}
+
+@media (max-width: 500px) {
+    iframe {
+       
+       left: 155px;
+      
+    }
+
+    
+}
+
+
+@media (max-width: 455px) {
+    iframe {
+       
+       left: 145px;
+      
+    }
+
+    
+}
+
+
+@media (max-width: 430px) {
+    iframe {
+       
+       left: 135px;
+      
+    }
+
+    
+}
+
+@media (max-width: 395px) {
+    iframe {
+       
+       left: 125px;
+      
+    }
+
+    
+}
+
+@media (max-width: 370px) {
+    iframe { 
+       left: 115px;
+    }
+}
+
+@media (max-width: 350px) {
+    #mark , #rack {
+        width: 100%;
+        height: 250px;
+        padding-bottom: 150px;
+    }
+}
+
+
+@media (max-width: 340px) {
+    iframe {  
+       left: 105px;
+    }  
+}
+
+@media (max-width: 315px) {
+    iframe {
+       
+       left: 100px;
+      
+    }
+
+    
+}
+@media (max-width: 295px) {
+    iframe {
+       
+       left: 90px;
+      
+    }
+
+    
+}
+
+@media (max-width: 260px) {
+    iframe {
+       
+       left: 80px;
+      
+    }
+
+    
+}
+
+@media (max-width: 240px) {
+    iframe {
+       
+       left: 70px;
+      
+    }
+
+    
+}
+@media (max-width: 205px) {
+    iframe {
+       
+       left: 65px;
+      
+    }
+
+    
+}
